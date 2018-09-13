@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* basic form */
+.form-box {padding: 35px; background: #fff;}
+.form-box table.form {width: 100%; margin: 20px 0; border-top: 1px solid #f0f0f0; font-size: 14px; background: #fff;}
+.form-box table.form td {padding: 15px 10px; border-bottom: 1px solid #f0f0f0;}
+.form-box table.form td.th {width: 140px; text-align: right; font-weight: 400; color: #222;}
+.form-box table.form td span.required {margin-left: 5px; color: #ff3c7e;}
+.form-box table.form td p.line + p.line {margin-top: 5px;}
+.form-box input.text {box-sizing: border-box; width: 180px; height: 30px; padding: 0 10px; font: inherit; border: 1px solid #e0e0e0; border-radius: 3px; outline: none; transition: border-color .3s; -webkit-appearance: none; appearance: none; vertical-align: middle;}
+.form-box input.text:focus {box-shadow: 0 0 3px 0 #65a6ff;}
+.form-box input.full {width: 100%;}
+.form-box input.half {width: 49%;}
+.form-box input.phone {width: 80px;}
+.form-box input.date,
+.form-box input.month,
+.form-box input.year {width: 100px;}
+.form-box input.datetime,
+.form-box input.datehour {width: 180px;}
+.form-box input.number {width: 80px; text-align: right;}
+.form-box input[type=radio],
+.form-box input[type=checkbox] {margin: 0 4px 0 0; vertical-align: middle;}
+.form-box select {box-sizing: border-box; height: 30px; padding-left: 10px; font: inherit; border: 1px solid #e0e0e0; border-radius: 3px; outline: none; transition: border-color .3s;  vertical-align: middle;}
+.form-box select:focus {box-shadow: 0 0 3px 0 #65a6ff;}
+.form-box textarea {box-sizing: border-box; width: 100%; padding: 10px; font: inherit; border: 1px solid #e0e0e0; border-radius: 3px; outline: none; transition: border-color .3s; -webkit-appearance: none; appearance: none; vertical-align: middle;}
+ul.input-list {overflow: hidden;}
+ul.input-list li {float: left; margin-right: 30px; line-height: 30px; position: relative;}
+ul.input-list li input {margin-right: 5px;}
+
+/* buttons */
+.button-box {text-align: right; margin: 20px 0;}
+.button-box.center {text-align: center;}
+.button-box.left {text-align: left;}
+
+.btn {display: inline-block; position: relative; box-sizing: border-box; min-width: 120px; height: 30px; line-height: 28px; padding: 0 10px; border: 1px solid rgba(0, 0, 0, 0.2); color: #fff; background: #308ee0; text-align: center; border-radius: 3px; font-size: 0.85em; transition: all .3s; cursor: pointer;}
+.btn:hover {box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1); opacity: 0.8;}
+.btn:active {box-shadow: none;}
+
+.btn.tiny {height: 18px; line-height: 16px; min-width: 20px; padding: 0 5px; font-size: 11px;}
+.btn.sm {height: 24px; line-height: 22px; min-width: 60px; padding: 0 12px; font-size: 13px;}
+.btn.md {height: 28px; line-height: 26px; min-width: 100px; padding: 0 15px; font-size: 14px;}
+.btn.lg {height: 38px; line-height: 36px; min-width: 160px; padding: 0 18px; font-size: 16px;}
+
+.btn.purple {background-color: #8862e0}
+.btn.white {background-color: #fff; color: #333;}
+.btn.mint {background-color: #00ce68;}
+.btn.yellow {background-color: #ffaf00;}
+.btn.dark {background-color: #424964}
+.btn.red {background-color: #e65251;}
+
+.btn.icon {overflow: hidden; vertical-align: middle;}
+.btn.tiny.icon {width: 22px; height: 22px; line-height: 20px; font-size: 11px; padding: 0; min-width: 0;}
+.btn.sm.icon {width: 30px; height: 30px; line-height: 28px; font-size: 13px; padding: 0; min-width: 0;}
+.btn.md.icon {width: 38px; height: 38px; line-height: 36px; font-size: 14px; padding: 0; min-width: 0;}
+.btn.lg.icon {width: 46px; height: 46px; line-height: 44px; font-size: 16px; padding: 0; min-width: 0;}
+.btn.icon.round {border-radius: 50%;}
+.btn.icon.round:active:before {border-radius: 50%;}
+
+.btn > .fa {position: relative; top: -1px; font-size: 1em; line-height: 1.2em; margin: 0;}
+.btn > .fa.left {margin-right: 0.5em;}
+.btn > .fa.right {margin-left: 0.5em;}
+.btn.tiny.icon-left {padding-left: 25px;}
+.btn.sm.icon-left {padding-left: 38px;}
+.btn.icon-left {padding-left: 44px;}
+.btn.lg.icon-left {padding-left: 60px;}
+.btn.tiny.icon-right {padding-right: 25px;}
+.btn.sm.icon-right {padding-right: 38px;}
+.btn.md.icon-right {padding-right: 44px;}
+.btn.lg.icon-right {padding-right: 60px;}
+.btn.icon-left > .fa, .btn.icon-right > .fa {background: rgba(255, 255, 255, 0.3); position: absolute; top: 0; height: 100%; font-size: 1.2em;}
+.btn.icon-left > .fa {left: 0;}
+.btn.icon-right > .fa {right: 0;}
+.btn.tiny.icon-left > .fa, .btn.tiny.icon-right > .fa {width: 20px; line-height: 16px;}
+.btn.sm.icon-left > .fa, .btn.sm.icon-right > .fa {width: 28px; line-height: 22px;}
+.btn.md.icon-left > .fa, .btn.md.icon-right > .fa {width: 36px; line-height: 26px;}
+.btn.lg.icon-left > .fa, .btn.lg.icon-right > .fa {width: 44px; line-height: 36px;}
+
+
+
+
+
+
+
+
+
+
+

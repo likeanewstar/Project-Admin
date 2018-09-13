@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Adminator">
+        <title>관리 시스템</title>
+        <meta name="description" content="관리 시스템 메인 대시보드입니다.">
+        <!-- Webfont -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/layout.css" />
+        <link rel="stylesheet" type="text/css" href="css/form.css" />
+        <!-- JavaScript & jQuery -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/iscroll.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="js/front_v180912.js"></script>
+    </head>
+    <body class="main dashboard">
+        <div id="wrap"> 
+            <!-- skip navigation -->
+            <div id="skip"><a href="#content">본문 바로가기 (Skip Navigation)</a></div>
+
+            <!-- side bar -->
+            <div class="sidebar">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="로고" /><span>Adminator</span></a></h1>
+                <div class="sidebar-menu">
+                    <div class="box">
+                        <!-- home -->
+                        <h3 class="menu-tit">Home</h3>
+                        <ul class="menu">
+                            <li><a href="index.html"><i class="fas fa-desktop"></i><em>Dashboard</em></a></li>
+                        </ul>
+                        <!-- info -->
+                        <h3 class="menu-tit">Info</h3>
+                        <ul class="menu">
+                            <li>
+                                <a href="#"><i class="fas fa-user"></i><em>회원정보</em></a>
+                                <ul>
+                                    <li><a href="#">일반회원</a></li>
+                                    <li><a href="#">채용담당자</a></li>
+                                    <li><a href="#">관리자</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-landmark"></i><em>기관정보</em></a>
+                                <ul>
+                                    <li><a href="#">대학교정보</a></li>
+                                    <li><a href="#">대학원정보</a></li>
+                                    <li><a href="#">학과정보</a></li>
+                                </ul>
+                            </li>                  
+                        </ul>
+                        <!-- features -->
+                        <h3 class="menu-tit">Features</h3>
+                        <ul class="menu">
+                            <li>
+                                <a href="#"><i class="fas fa-edit"></i><em>Form</em></a>
+                                <ul>
+                                    <li><a href="#">List View</a></li>
+                                    <li><a href="page/basic-form.html">Form UI<i class="far fa-check-square"></i></a></li>
+                                    <li><a href="#">General Form</a></li>
+                                    <li><a href="#">Advanced Components</a></li>
+                                    <li><a href="#">Form Wizard</a></li>
+                                    <li><a href="#">Layer Popup</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-file"></i><em>Page</em></a>
+                                <ul>
+                                    <li><a href="#">로그인 페이지</a></li>
+                                    <li><a href="#">404 에러 페이지</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-paint-roller"></i><em>UI Elements</em></a>
+                                <ul>
+                                    <li><a href="page/buttons.html">Buttons<i class="far fa-check-square"></i></a></li>
+                                    <li><a href="page/layout.html">Layout<i class="far fa-check-square"></i></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class="fas fa-chart-pie"></i><em>Chart (Google)</em></a></li>
+                            <li><a href="#"><i class="fas fa-calendar-alt"></i><em>Calender</em></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content page -->
+            <div class="content-page">
+                <div class="navbar">
+                    <ul class="util-icon">
+                        <li><a href="#" class="toggle" title="메뉴 접기/펴기"><i class="fas fa-bars"></i></a></li>
+                        <li><a href="#" class="search" title="검색"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                    <ul class="account">
+                        <li>
+                            <a href="#"><i class="fas fa-bell"></i></a><span class="alert">3</span>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-envelope"></i></a><span class="alert">9</span>
+                        </li>
+                        <li class="profile">
+                            <a href="#">
+                                <span>안녕하세요, 관리자님!</span>
+                                <img class="photo" src="images/profile.jpg" alt="프로필 사진" />
+                            </a>
+                            <ul class="popup-profile">
+                                <li><a href="#"><i class="fas fa-user"></i><span>내 정보 관리</span></a></li>
+                                <li><a href="#"><i class="fas fa-sliders-h"></i><span>설정</span></a></li>
+                                <li><a href="#"><i class="fas fa-info-circle"></i><span>도움말</span></a></li>
+                                <li><a href="#"><i class="fas fa-sign-out-alt"></i><span>로그아웃</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- contents-->
+                <div class="page basic-form">
+                    <div class="page-tit" class="">
+                        <h2>Dashboard</h2>
+                        <p>서비스 관리를 위한 요약 정보</p>
+                    </div>
+                    <div class="form-box layout-box">
+                        <h3>Basic Form</h3>
+
+                    </div>
+                </div>     
+            </div>
+        </div> <!-- #wrap -->
+        <!-- Script -->
+        <script>
+        'use strict';
+
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
